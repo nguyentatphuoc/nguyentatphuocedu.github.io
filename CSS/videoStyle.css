@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body{margin: 0;font-family: 'Poppins', sans-serif;font-size: 16px;color:#eee;
+background: #F2F2F2;
+background-image:url("../images/meetings-page-bg.jpg");
+z-index: 1}
+*{margin: 0;
+padding: 0}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1{font-size: 3rem}
+p{line-height: 1.2em;}
+a{text-decoration: none}
+.top-video{width:100%; height: 100%}
+.top-view{position: relative;left: 0;top:0}
+.overflow{position: absolute;z-index: 5;
+		width: 100%; height: 100%;
+		left: 0; top: 0;
+	background-image: linear-gradient(rgba(0,0,0,.4)20%, rgba(0,0,0,.7)80%)
+}
+.top-bar{position: absolute;z-index: 6; left: 0;top:0;width:100%; height: 45px}
+.social-icon {text-align: right}
+.social-icon i{margin: 0 5px;
+text-align: right}
+.navbar{display:flex;
+	padding: 15px 0; background:rgba(255,255,255,.3);
+	position: absolute; left: 0;z-index:7;top:45px;width:100%;
+	padding:20px 0;
+}
+.navbar .container{display:flex;justify-content: space-around; align-items: center}
+.navbar .menu ul{display: flex;margin: 0;padding-left: 0;list-style: none;}
+.navbar .menu ul li{position: relative}
+.navbar .menu ul li a{color:#fff;text-decoration: none;padding:0 15px}
+.navbar .logo{font-size: 2em;font-weight: bold}
+.navbar .menu ul li a:hover
+{color:tomato;}
+
+.caption-video{position: absolute;width: 40%;z-index: 9;left: 15%;top:40%;}
+
+.banner{position: absolute;z-index:12;width: 80%; top:90%;left:10%;}
+
+#banner .item{background-image: url("../images/service-item-bg.jpg");
+border-radius: 20px;
+min-height: 250px;
+text-align: center;padding: 30px}
+#banner .item img{width:50%;margin: auto;}
+
+.banner .owl-nav{
+position: absolute;width:100%; top: 25%}
+
+#banner .owl-nav .owl-prev{position: absolute;left: -5%; font-size: 4rem;}
+#banner .owl-nav .owl-next{position: absolute; right: -5%; font-size: 4rem;}
+
+.border-top-gray{border-top: 1px solid #eee}
+.border-bottom-gray{border-bottom: 1px solid #eee}
+.border-bottom{border-bottom: 1px solid #fff}
+
+.cover-apply-about{background: url("../images/apply-bg.jpg");
+	position: relative;
+}
+
+/*------------------Style cho meeting------------------------------------------*/
+.cover{position: relative}
+.cover img{z-index: 2}
+.caption-cover{position: absolute;top:55%; left: 30%;}
+.bg-meeting{position: relative}
+.upcoming-meeting{
+	position: absolute;
+	top:80%;width: 100%}
+.card-1{position: relative;
+background: #fff;
+border-radius: 20px;
+color:#333;
+overflow: hidden}
+.card-1 .giatien{
+	position: absolute;
+	top:10px;left: 20px;
+	border:1px solid #eee;
+	border-radius: 20px;
+	padding: 2px 5px;
+	background: #eee;
+	color:#000;	
+}
+.card-2{position: relative;
+background:rgba(241,240,240,0.15);
+	color:#eee;}
+
+/*------------------Style cho meeting-detail-----------------------------------*/
+
+.caption-meeting-detail{position: absolute;top:55%; left: 20%;}
+
+.card-meeting-detail{margin-top: 100px;
+color:#333;
+position: relative;
+background: #fff;
+border-radius: 20px;
+color:#333;
+overflow: hidden}
+
+.card-meeting-detail p {font-size: 14px;line-height: 1.5em;}
+.card-meeting-detail .giatien{
+	position: absolute;
+	top:10px;left: 20px;
+	border:1px solid #eee;
+	border-radius: 20px;
+	padding: 5px 15px;
+	background: #eee;
+	color:#000;}	
+	
+.card-meeting-detail .time{
+	position: absolute;
+	top:15px;right: 20px;
+	border:1px solid #eee;
+	border-radius: 5px;
+	padding: 10px 15px;
+	background: #eee;
+	color:#000;	}
+
+/* ----------------------------Style the tab--------------------------------- */
+.tab{
+  overflow: hidden;
+  display: flex;
+justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color:#fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 0 5px;
+  transition: 0.3s;color:#B30002;font-size: 1.2em;
+  border-radius: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #B30002;color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #B30002;color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.course .item{
+	background:#fff;color:#000;
+	; width: 20%;
+}
+.course .item h4{
+	text-align: center;padding: 0 10px;
+}
+.course .item i{
+	color:#FFBE39; margin: 0 1px;
+}.course .item p{
+	color:#B30002;text-align: right;
+}
